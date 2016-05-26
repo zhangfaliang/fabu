@@ -1,0 +1,32 @@
+<div class="progress" >
+    <div class="progress-bar" id="divcome" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 0%;">
+        <input type = "hidden" ng-model="comeing">
+        {{comming}}
+       <!-- <script>
+            var $input=$("input[type='hidden']");
+            var $val=$input.val()
+            var divcome=$("#divcome");
+            var timer= setInterval(function () {
+                $val= parseInt($val+Math.ceil(Math.random()*10));
+                divcome.css({width:""+$val+"%"});
+                console.log($val)
+                if($val>=99){
+                    $val=100
+                    clearInterval(timer)
+
+                }
+                $input.val($val);
+                divcome.text($val+"%")
+            },500)
+        </script>-->
+
+    </div>
+</div>
+<div class="list-group">
+    <div ng-repeat="contain in contains">
+        <a  class="list-group-item ">
+            <h4 class="list-group-item-heading" ng-bind="contain.title"></h4>
+            <p class="list-group-item-text" ng-bind="contain.container">...</p>
+        </a>
+    </div>
+</div>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en" ng-app="shiny">
+<head>
+    <meta charset = "UTF-8">
+    <title>Title</title>
+    <link rel = "stylesheet" href = "bower_components/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+<div class="row text-center" id="top" ng-controller="shinyCtr" >
+    <div class="container">
+        <ul class="nav nav-tabs " >
+            <li role="presentation"  ng-class="{active:flag=='main'}"  ng-click="flag='main'"><a  href = "#/main">首页</a></li>
+            <li role="presentation" ng-class="{active:flag=='contains'} " ng-click="flag='contains'" ><a href = "#/contains">内容</a></li>
+            <li role="presentation" ng-class="{active:flag=='last'}" ng-click="flag='last'" ><a href = "#/last">尾页</a></li>
+        </ul>
+    </div>
+</div>
+<div ng-view>
+
+</div>
+<div class="row" id="footer">
+    <div class="col-xs-12 text-center">
+        <div class="alert alert-success">@版本所有 shiny</div>
+    </div>
+</div>
+</body>
+</html>
+<script src="bower_components/jquery/dist/jquery.js"></script>
+<script src="bower_components/angular/angular.js"></script>
+<script src="bower_components/angular-route/angular-route.js"></script>
+<script src="app.js"></script>

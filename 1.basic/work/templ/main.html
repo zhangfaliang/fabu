@@ -1,0 +1,16 @@
+<div class="jumbotron">
+    <div class="row">
+        <div class="container">
+            <h1 class="col-md-offset-4 col-md-4">巨幕首页</h1>
+        </div>
+    </div>
+
+</div>
+<div class="row">
+    <div class="container">
+        <div ng-repeat="say in says"   class=" col-md-4 text-center" ><br>
+            <h3 ng-bind="say.name"></h3>
+            <h5 ng-bind="say.detail"></h5>
+        </div>
+    </div>
+</div>

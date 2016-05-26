@@ -1,0 +1,3 @@
+[{"id":1,"name":"BootStrap","detail":"这是一个nb的css和html框架"},
+  {"id":2,"name":"angular","detail":"这是一个nb的controller框架"},
+  {"id":3,"name":"gulp and webpack","detail":"这是一个打包工具"}]
