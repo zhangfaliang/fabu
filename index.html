@@ -16,7 +16,7 @@
         {{addConrtactForm==true?"隐藏":"添加"}}</a>
 </div>
 <div class="container">
-    <form  ng-submit="addContact()" ng-show="addConrtactForm">
+ <form ng-submit="subContact()" ng-show="addConrtactForm">
         <div class="form-group">
             <lable for="username">姓名</lable>
             <input   class="form-control" type = "text" id="username" ng-model="contact.name" name="username">
@@ -26,8 +26,8 @@
             <input type = "text"   class="form-control" id="email" ng-model="contact.email" name="username">
         </div>
         <div class="form-group">
-
-            <input type = "submit" class="btn-default" value="保存" name="username">
+              <input type="submit" class="btn btn-default" value="保存"/>
+      
         </div>
         <h3>添加联系人</h3>
         <div class="col-xs-12">
@@ -50,8 +50,8 @@
                 <td>{{contact.name}}</td>
                 <td>{{contact.email}}</td>
                 <td>
-                    <a class="btn btn-warning" ng-click="edit(contact)" >编辑</a>
-                    <a class="btn btn-danger" ng-click="contacts.$remove(contact)">删除</a>
+                     <a class="btn btn-warning" ng-click="" >编辑</a>
+                    <a  class="btn btn-danger" ng-click="contacts.$remove(contact)">删除</a>
                 </td>
 
 
